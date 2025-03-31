@@ -1,4 +1,4 @@
-    <?php
+<?php
  // Add this to all your php files for added security
 
  if (!defined('ABSPATH'))
@@ -48,7 +48,7 @@
         // Enable featured images and post thumbnails
 
         add_theme_support( 'automatic-feed-links' );
-        This feature adds RSS feed links to HTML <head>.
+       // This feature adds RSS feed links to HTML <head>.
         
         add_theme_support('title-tag');
         // Adds a custom <title> tag in the <head>
