@@ -1,4 +1,22 @@
-<?php
+<?php 
+    // START STEP 2.5 BUILD FOOTER
+    // Add this to all your php files for added security
+
+        if (!defined('ABSPATH'))
+          exit; 
+             // Exit if accessed directly. 
+             // Ex: Not being called up directly by index.php or some other theme PHP file
+         ?>
+
+      <footer>
+    
+      </footer>
+
+
+    </body>
+    </html><?php // END STEP 2.5 BUILD FOOTER ?>
+
+    <?php
  // Add this to all your php files for added security
 
  if (!defined('ABSPATH'))
@@ -39,10 +57,10 @@
 
     // END STEP 2.10 ADD THE MENUS
 
-// START STEP 2.14 ADD ADDITIONAL CUSTOM FEATURES TO THE SITE THEME
+    // START STEP 2.14 ADD ADDITIONAL CUSTOM FEATURES TO THE SITE THEME
     // https://developer.wordpress.org/reference%2Ffunctions%2Fadd_theme_support%2F/
 
-    function billypoppins_theme_init(){
+    function vero_theme_init(){
 
         add_theme_support('post-thumbnails');
         // Enable featured images and post thumbnails
@@ -85,13 +103,13 @@
         }
         
         // ADDS THESE FEATURES TO WP
-        add_action('after_setup_theme', 'billypoppins_theme_init');
+        add_action('after_setup_theme', 'vero_theme_init');
 
-// END STEP 2.14 ADD ADDITIONAL CUSTOM FEATURES TO THE SITE THEME
+        // END STEP 2.14 ADD ADDITIONAL CUSTOM FEATURES TO THE SITE THEME
 
     // START STEP 2.24 ADDING WIDGET SUPPORT
 
-    function billypoppins_widgets_init() {
+    function vero_widgets_init() {
 
         register_sidebar( array(
             'name'          => 'Widget sidebar',
@@ -103,5 +121,5 @@
         ) );
 
     }
-    add_action( 'widgets_init', 'billypoppins_widgets_init' );
+    add_action( 'widgets_init', 'vero_widgets_init' );
     // END STEP 2.24 ADDING WIDGET SUPPORT
