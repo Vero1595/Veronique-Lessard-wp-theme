@@ -1,21 +1,3 @@
-<?php 
-    // START STEP 2.5 BUILD FOOTER
-    // Add this to all your php files for added security
-
-        if (!defined('ABSPATH'))
-          exit; 
-             // Exit if accessed directly. 
-             // Ex: Not being called up directly by index.php or some other theme PHP file
-         ?>
-
-      <footer>
-    
-      </footer>
-
-
-    </body>
-    </html><?php // END STEP 2.5 BUILD FOOTER ?>
-
     <?php
  // Add this to all your php files for added security
 
